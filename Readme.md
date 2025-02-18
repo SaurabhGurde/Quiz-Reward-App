@@ -47,7 +47,7 @@ npm i
 
 ## For front end
 ```bash
-cd client && cp .env.example .env
+cd client
 ```
 ```bash
 npm start
