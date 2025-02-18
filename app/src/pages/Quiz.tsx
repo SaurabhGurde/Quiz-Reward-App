@@ -10,7 +10,7 @@ import api from '../api';
 import Toast from 'react-native-toast-message';
 import {setInitialUserDetails} from '../redux/userSlice';
 import {useAppDispatch, useAppSelector} from '../redux/store';
-import {setItem} from '../common/AsyncStorage';
+import {getItem, setItem} from '../common/AsyncStorage';
 
 type RootStackParamList = {
   [key: string]: any;
@@ -27,20 +27,25 @@ type resType = {
 
 const Quiz = (props: QuizScreenProps) => {
     let dispatch = useAppDispatch();
+    const userDetails = useAppSelector(state => state.user);
 
   const [currentQuestion, setCurrentQuestion] = useState(QuestionsData[0]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const handleDailyBonusclaim = async () => {
-    const userDetails = useAppSelector(state => state.user);
 
     let res = await api.post<resType>(
       'data/handleDailyUserbonus',
       {id: userDetails.id, rewardAmount: 1000},
       dispatch,
     );
+    console.log("in else block", res)
     if (res.status === 200) {
-      await setItem('userDetails', res.data.user);
+     let userDetails = await getItem('userDetails');
+      await setItem('userDetails', {
+        ...userDetails,
+        ...res.data.user
+      });
       dispatch(setInitialUserDetails(res.data.user));
       Toast.show({
         type: 'success',
@@ -57,8 +62,8 @@ const Quiz = (props: QuizScreenProps) => {
   const handleNextQuestion = (index: number, answer: questionType) => {
     dispatch(updateAnswer({...answer, index}));
     if (index + 1 === QuestionsData.length) {
+     handleDailyBonusclaim();
       props.navigation.navigate('Result');
-      handleDailyBonusclaim();
       return;
     }
     setCurrentQuestionIndex(index + 1);
@@ -72,7 +77,6 @@ const Quiz = (props: QuizScreenProps) => {
   };
 
   const slideAnim = useRef(new Animated.Value(-50)).current;
-  console.log((currentQuestionIndex / QuestionsData.length) * 100);
   useEffect(() => {
     slideAnim.setValue(-50);
     Animated.timing(slideAnim, {

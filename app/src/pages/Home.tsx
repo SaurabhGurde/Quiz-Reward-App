@@ -5,11 +5,15 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 import {RouteProp} from '@react-navigation/native';
 import {useAppDispatch, useAppSelector} from '../redux/store';
-import {canClaimBonus, getRemainingTime, handleDailyBonus} from '../common/helperFunctions';
+import {
+  canClaimBonus,
+  getRemainingTime,
+  handleDailyBonus,
+} from '../common/helperFunctions';
 import api from '../api';
 import Toast from 'react-native-toast-message';
-import { setInitialUserDetails } from '../redux/userSlice';
-import { setItem } from '../common/AsyncStorage';
+import {setInitialUserDetails} from '../redux/userSlice';
+import {getItem, setItem} from '../common/AsyncStorage';
 
 type propstype = {
   navigation: BottomTabNavigationProp<any, 'home'>;
@@ -17,10 +21,10 @@ type propstype = {
 };
 type resType = {
   data?: {
-    [key: string]: any
-  }
-  [key: string]: any
-}
+    [key: string]: any;
+  };
+  [key: string]: any;
+};
 
 const HomeScreen = (props: propstype) => {
   let dispatch = useAppDispatch();
@@ -55,27 +59,30 @@ const HomeScreen = (props: propstype) => {
         {id: userDetails.id},
         dispatch,
       );
-      if(res.status === 200){
-        handleDailyBonus()
-        await setItem("userDetails", res.data.user)
-        dispatch(setInitialUserDetails(res.data.user))
+      console.log(res)
+      if (res.status === 200) {
+       await handleDailyBonus();
+        let userDetails = await getItem('userDetails');
+        await setItem('userDetails', {
+          ...userDetails,
+          ...res.data.user,
+        });
+        dispatch(setInitialUserDetails(res.data.user));
         Toast.show({
-           type: 'success',
-           text2: 'Bonus claimed successfully!'
-        })
-      }
-      else {
+          type: 'success',
+          text2: 'Bonus claimed successfully!',
+        });
+      } else {
         Toast.show({
           type: 'error',
-          text2: 'Failed to claim Bonus try again!'
-       })
+          text2: 'Failed to claim Bonus try again!',
+        });
       }
-    }
-    else {
+    } else {
       Toast.show({
         type: 'error',
-        text2: `you can clain next bonus in ${remainingTime}`
-     })
+        text2: `you can clain next bonus in ${remainingTime}`,
+      });
     }
   };
 
@@ -104,7 +111,9 @@ const HomeScreen = (props: propstype) => {
           <Text style={styles.tileText}>Daily Bonus</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> props.navigation.navigate("Quiz")} style={styles.tile}>
+        <TouchableOpacity
+          onPress={() => props.navigation.navigate('Quiz')}
+          style={styles.tile}>
           <Text style={styles.tileText}>Quiz Time</Text>
         </TouchableOpacity>
       </View>

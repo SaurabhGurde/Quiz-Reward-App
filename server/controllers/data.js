@@ -25,6 +25,7 @@ export const getLeaderBoardData = async(req, res) => {
 
 
 export const handleDailyUserbonus = async (req, res) => {
+  console.log("first")
     try {
         const { id, rewardAmount } = req.body;
         if(!id){
