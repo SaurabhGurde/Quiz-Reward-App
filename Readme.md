@@ -1,7 +1,7 @@
 Quiz Reward app
 
 Check for App link
-https://drive.google.com/file/d/1kgKs0vXgq-ZXtSkgaoumn94fsP2pRmP1/view?usp=~~drive_link~~
+https://drive.google.com/file/d/1kgKs0vXgq-ZXtSkgaoumn94fsP2pRmP1/view?usp=drive_link
 
 https://dailytodo.saurabhgurde.life/
 
