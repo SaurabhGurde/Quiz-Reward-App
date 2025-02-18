@@ -74,6 +74,6 @@ class ApiService {
 }
 
 
-const api = new ApiService('http://192.168.1.5:5000/');
+const api = new ApiService('https://quiz-reward-app.vercel.app/');
 
 export default api;
