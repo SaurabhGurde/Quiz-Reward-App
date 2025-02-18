@@ -5,15 +5,26 @@ https://drive.google.com/file/d/1kgKs0vXgq-ZXtSkgaoumn94fsP2pRmP1/view?usp=~~dri
 
 https://dailytodo.saurabhgurde.life/
 
-<img src="app/src/assets/1.jpeg"/>
-<img src="app/src/assets/2.jpeg"/>
-<img src="app/src/assets/3.jpeg"/>
-<img src="app/src/assets/4.jpeg"/>
-<img src="app/src/assets/5.jpeg"/>
-<img src="app/src/assets/6.jpeg"/>
-<img src="app/src/assets/7.jpeg"/>
-<img src="app/src/assets/8.jpeg"/>
-<img src="app/src/assets/9.jpeg"/>
+### Screenshots  
+
+<table>
+  <tr>
+    <td><img src="app/src/assets/1.jpeg" width="200"/></td>
+    <td><img src="app/src/assets/2.jpeg" width="200"/></td>
+    <td><img src="app/src/assets/3.jpeg" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="app/src/assets/4.jpeg" width="200"/></td>
+    <td><img src="app/src/assets/5.jpeg" width="200"/></td>
+    <td><img src="app/src/assets/6.jpeg" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="app/src/assets/7.jpeg" width="200"/></td>
+    <td><img src="app/src/assets/8.jpeg" width="200"/></td>
+    <td><img src="app/src/assets/9.jpeg" width="200"/></td>
+  </tr>
+</table>
+
 
 ### Installing
 
