@@ -29,310 +29,310 @@ const QuestionsData: questionType[] = [
       passCondition: "max-yes",
     },
   },
-  // {
-  //   id: 2,
-  //   title: "Have you ever wondered if your child might be deaf?",
-  //   description:
-  //     "You reported that you have wondered if you child is deaf. What led you to wonder that?",
-  //   yesDescription: "Does he/she…",
-  //   noDescription: "",
-  //   yesSelected: {
-  //     questions: [
-  //       { title: "often ignore sounds?", example: "pass" },
-  //       { title: "often ignore people?", example: "pass" },
-  //     ],
-  //     passCondition: "all-no",
-  //   },
-  //   noSelected: {
-  //     questions: [],
-  //     passCondition: "pass-direct",
-  //   },
-  // },
-  // {
-  //   id: 3,
-  //   title: "Does your child play pretend or make-believe?",
-  //   description:
-  //     "pretend to drink from an empty cup, pretend to talk on a phone, or pretend to feed a doll or stuffed animal?)",
-  //   yesDescription:
-  //     "Please give me an example of his/her pretend play. (If parent does not give a PASS example below, ask each individually.)",
-  //   yesSelected: {
-  //     questions: [
-  //       { title: "Pretend to drink from a toy cup?", example: "pass" },
-  //       { title: "Pretend to eat from a toy spoon or fork?", example: "pass" },
-  //       { title: "Pretend to talk on the telephone?", example: "pass" },
-  //       {
-  //         title:
-  //           "Pretend to feed a doll or stuffed animal with real or imaginary food?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "Push a car as if it is going along a pretend road?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title:
-  //           "Pretend to be a robot, an airplane, a ballerina, or any other favorite character?",
-  //         example: "pass",
-  //       },
-  //       { title: "Put a toy pot on a pretend stove?", example: "pass" },
-  //       { title: "Stir imaginary food?", example: "pass" },
-  //       {
-  //         title:
-  //           "Put an action figure or doll into a car or truck as if it is the driver or passenger?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "Pretend to vacuum the rug, sweep the floor, or mow the lawn?",
-  //         example: "pass",
-  //       },
-  //     ],
-  //     passCondition: "any-yes",
-  //   },
-  //   noSelected: {
-  //     questions: [
-  //       { title: "Pretend to drink from a toy cup?", example: "pass" },
-  //       { title: "Pretend to eat from a toy spoon or fork?", example: "pass" },
-  //       { title: "Pretend to talk on the telephone?", example: "pass" },
-  //       {
-  //         title:
-  //           "Pretend to feed a doll or stuffed animal with real or imaginary food?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "Push a car as if it is going along a pretend road?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title:
-  //           "Pretend to be a robot, an airplane, a ballerina, or any other favorite character?",
-  //         example: "pass",
-  //       },
-  //       { title: "Put a toy pot on a pretend stove?", example: "pass" },
-  //       { title: "Stir imaginary food?", example: "pass" },
-  //       {
-  //         title:
-  //           "Put an action figure or doll into a car or truck as if it is the driver or passenger?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "Pretend to vacuum the rug, sweep the floor, or mow the lawn?",
-  //         example: "pass",
-  //       },
-  //     ],
-  //     passCondition: "all-yes",
-  //   },
-  // },
-  // {
-  //   id: 4,
-  //   title: "Does your child like climbing on things?",
-  //   description: "furniture, playground equipment, or stairs",
-  //   yesDescription:
-  //     "Please give me an example of something he/she enjoys climbing on. (If parent does not give a PASS example below, ask each individually.)",
-  //   noDescription: "",
-  //   yesSelected: {
-  //     questions: [
-  //       { title: "Stairs?", example: "pass" },
-  //       { title: "Chairs?", example: "pass" },
-  //       { title: "Furniture?", example: "pass" },
-  //       { title: "Playground equipment?", example: "pass" },
-  //     ],
-  //     passCondition: "any-yes",
-  //   },
-  //   noSelected: {
-  //     questions: [
-  //       { title: "Stairs?", example: "pass" },
-  //       { title: "Chairs?", example: "pass" },
-  //       { title: "Furniture?", example: "pass" },
-  //       { title: "Playground equipment?", example: "pass" },
-  //     ],
-  //     passCondition: "all-yes",
-  //   },
-  // },
-  // {
-  //   id: 5,
-  //   title:
-  //     "Does your child make unusual finger movements near his or her eyes?",
-  //   description:
-  //     "(FOR EXAMPLE, does your child wiggle his or her fingers close to his or her eyes?)",
-  //   yesDescription:
-  //     "Please describe these movements (If parent does not give a PASS example below, ask each individually.)",
-  //   noDescription: "",
-  //   yesSelected: {
-  //     questions: [
-  //       { title: "Wiggle his/her fingers near his/her eyes?", example: "pass" },
-  //       {
-  //         title: "Hold his/her hands up close to his/her eyes?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "Hold his/her hands off to the side of his/her eyes?",
-  //         example: "pass",
-  //       },
-  //       { title: "Flap his/her hands near his/her face?", example: "pass" },
-  //     ],
-  //     passCondition: "all-no",
-  //   },
-  //   noSelected: {
-  //     questions: [],
-  //     passCondition: "pass-direct",
-  //   },
-  // },
-  // {
-  //   id: 6,
-  //   title:
-  //     "Does your child point with one finger to ask for something or to get help?",
-  //   description: "pointing to a snack or toy that is out of reach",
-  //   yesDescription: "",
-  //   noDescription:
-  //     "If there is something your child wants that is out of reach, such as a snack or toy that is out of reach, how does he/she get it? (If parent does not give a PASS example below, ask each individually.)",
-  //   yesSelected: {
-  //     questions: [],
-  //     passCondition: "pass-direct",
-  //   },
-  //   noSelected: {
-  //     questions: [
-  //       {
-  //         title: "Reach for the object with his/her whole hand?",
-  //         example: "pass",
-  //       },
-  //       { title: "Lead you to the object?", example: "pass" },
-  //       { title: "Try to get the object for him/herself?", example: "pass" },
-  //       { title: "Ask for it using words or sounds?", example: "pass" },
-  //     ],
-  //     passCondition: "any-yes",
-  //   },
-  // },
-  // {
-  //   id: 7,
-  //   title:
-  //     "Does your child point with one finger to show you something interesting?",
-  //   description:
-  //     "pointing to an airplane in the sky or a big truck in the road",
-  //   yesDescription:
-  //     "Please give me an example something he/she might point at to show you. (If parent does not give a PASS example below, ask each individually.)",
-  //   noDescription:
-  //     "Does your child sometimes want you to see something interesting such as….",
-  //   yesSelected: {
-  //     questions: [
-  //       { title: "An airplane in the sky?", example: "pass" },
-  //       { title: "A truck on the road?", example: "pass" },
-  //       { title: "A bug on the ground?", example: "pass" },
-  //       { title: "An animal in the yard?", example: "pass" },
-  //     ],
-  //     passCondition: "any-yes",
-  //   },
-  //   noSelected: {
-  //     questions: [
-  //       {
-  //         title: "An airplane in the sky?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "A truck on the road?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "A bug on the ground?",
-  //         example: "pass",
-  //       },
-  //       {
-  //         title: "An animal in the yard?",
-  //         example: "pass",
-  //       },
-  //     ],
-  //     passCondition: "any-yes",
-  //   },
-  // },
-  // {
-  //   id: 8,
-  //   title: "Is your child interested in other children?",
-  //   description:
-  //     "does your child watch other children, smile at them, or go to them?)",
-  //   yesDescription: "",
-  //   noDescription: "",
-  //   yesSelected: {
-  //     questions: [
-  //       {
-  //         title:
-  //           "Is he/she interested in children who are not his/her brother or sister?",
-  //         example: "pass",
-  //       },
-  //     ],
-  //     passCondition: "all-yes",
-  //   },
-  //   noSelected: {
-  //     questions: [
-  //       {
-  //         title:
-  //           "When you are at the playground or supermarket, does your child usually respond to other children?",
-  //         example: "pass",
-  //       },
-  //     ],
-  //     passCondition: "all-yes",
-  //   },
-  // },
-  // {
-  //   id: 9,
-  //   title:
-  //     "Does your child show you things by bringing them to you or holding them up for you to see – not to get help, but just to share?",
-  //   description: "showing you a flower, a stuffed animal, or a toy truck)",
-  //   yesDescription:
-  //     "Please give me an example of something he/she might bring to show you or hold up for you to see. (If parent does not give one of the following PASS examples, ask each individually.)",
-  //   noDescription: "",
-  //   yesSelected: {
-  //     questions: [
-  //       { title: "A picture or toy just to show you?", example: "pass" },
-  //       { title: "A drawing he/she has done?", example: "pass" },
-  //       { title: "A flower he/she has picked?", example: "pass" },
-  //       { title: "A bug he/she has found in the grass?", example: "pass" },
-  //       { title: "A few blocks he/she has put together?", example: "pass" },
-  //       { title: "Other (describe):", example: "pass" },
-  //     ],
-  //     passCondition: "any-yes",
-  //   },
-  //   noSelected: {
-  //     questions: [
-  //       { title: "A picture or toy just to show you?", example: "pass" },
-  //       { title: "A drawing he/she has done?", example: "pass" },
-  //       { title: "A flower he/she has picked?", example: "pass" },
-  //       { title: "A bug he/she has found in the grass?", example: "pass" },
-  //       { title: "A few blocks he/she has put together?", example: "pass" },
-  //       { title: "Other (describe):", example: "pass" },
-  //     ],
-  //     passCondition: "any-yes",
-  //   },
-  // },
-  // {
-  //   id: 10,
-  //   title: "Does your child respond when you call his or her name?",
-  //   description:
-  //     "does he or she look up, talk or babble, or stop what he or she is doing when you call his or her name?)",
-  //   yesDescription:
-  //     "Please give me an example of how he/she responds when you call his/her name. (If parent does not give a PASS example below, ask each individually.)",
-  //   noDescription:
-  //     "If he/she is not involved in something fun or interesting, what does he/she do when you call his/her name? (If parent does not give a PASS example below, ask each individually.)",
-  //   yesSelected: {
-  //     questions: [
-  //       { title: "Look up?", example: "pass" },
-  //       { title: "Talk or babble?", example: "pass" },
-  //       { title: "Stop what he/she is doing?", example: "pass" },
-  //     ],
-  //     passCondition: "all-yes",
-  //   },
-  //   noSelected: {
-  //     questions: [
-  //       { title: "Make no response?", example: "pass" },
-  //       { title: "Seem to hear but ignores parent?", example: "pass" },
-  //       {
-  //         title:
-  //           "Respond only if parent is right in front of the child's face?",
-  //         example: "pass",
-  //       },
-  //       { title: "Respond only if touched?", example: "pass" },
-  //     ],
-  //     passCondition: "all-no",
-  //   },
-  // },
+  {
+    id: 2,
+    title: "Have you ever wondered if your child might be deaf?",
+    description:
+      "You reported that you have wondered if you child is deaf. What led you to wonder that?",
+    yesDescription: "Does he/she…",
+    noDescription: "",
+    yesSelected: {
+      questions: [
+        { title: "often ignore sounds?", example: "pass" },
+        { title: "often ignore people?", example: "pass" },
+      ],
+      passCondition: "all-no",
+    },
+    noSelected: {
+      questions: [],
+      passCondition: "pass-direct",
+    },
+  },
+  {
+    id: 3,
+    title: "Does your child play pretend or make-believe?",
+    description:
+      "pretend to drink from an empty cup, pretend to talk on a phone, or pretend to feed a doll or stuffed animal?)",
+    yesDescription:
+      "Please give me an example of his/her pretend play. (If parent does not give a PASS example below, ask each individually.)",
+    yesSelected: {
+      questions: [
+        { title: "Pretend to drink from a toy cup?", example: "pass" },
+        { title: "Pretend to eat from a toy spoon or fork?", example: "pass" },
+        { title: "Pretend to talk on the telephone?", example: "pass" },
+        {
+          title:
+            "Pretend to feed a doll or stuffed animal with real or imaginary food?",
+          example: "pass",
+        },
+        {
+          title: "Push a car as if it is going along a pretend road?",
+          example: "pass",
+        },
+        {
+          title:
+            "Pretend to be a robot, an airplane, a ballerina, or any other favorite character?",
+          example: "pass",
+        },
+        { title: "Put a toy pot on a pretend stove?", example: "pass" },
+        { title: "Stir imaginary food?", example: "pass" },
+        {
+          title:
+            "Put an action figure or doll into a car or truck as if it is the driver or passenger?",
+          example: "pass",
+        },
+        {
+          title: "Pretend to vacuum the rug, sweep the floor, or mow the lawn?",
+          example: "pass",
+        },
+      ],
+      passCondition: "any-yes",
+    },
+    noSelected: {
+      questions: [
+        { title: "Pretend to drink from a toy cup?", example: "pass" },
+        { title: "Pretend to eat from a toy spoon or fork?", example: "pass" },
+        { title: "Pretend to talk on the telephone?", example: "pass" },
+        {
+          title:
+            "Pretend to feed a doll or stuffed animal with real or imaginary food?",
+          example: "pass",
+        },
+        {
+          title: "Push a car as if it is going along a pretend road?",
+          example: "pass",
+        },
+        {
+          title:
+            "Pretend to be a robot, an airplane, a ballerina, or any other favorite character?",
+          example: "pass",
+        },
+        { title: "Put a toy pot on a pretend stove?", example: "pass" },
+        { title: "Stir imaginary food?", example: "pass" },
+        {
+          title:
+            "Put an action figure or doll into a car or truck as if it is the driver or passenger?",
+          example: "pass",
+        },
+        {
+          title: "Pretend to vacuum the rug, sweep the floor, or mow the lawn?",
+          example: "pass",
+        },
+      ],
+      passCondition: "all-yes",
+    },
+  },
+  {
+    id: 4,
+    title: "Does your child like climbing on things?",
+    description: "furniture, playground equipment, or stairs",
+    yesDescription:
+      "Please give me an example of something he/she enjoys climbing on. (If parent does not give a PASS example below, ask each individually.)",
+    noDescription: "",
+    yesSelected: {
+      questions: [
+        { title: "Stairs?", example: "pass" },
+        { title: "Chairs?", example: "pass" },
+        { title: "Furniture?", example: "pass" },
+        { title: "Playground equipment?", example: "pass" },
+      ],
+      passCondition: "any-yes",
+    },
+    noSelected: {
+      questions: [
+        { title: "Stairs?", example: "pass" },
+        { title: "Chairs?", example: "pass" },
+        { title: "Furniture?", example: "pass" },
+        { title: "Playground equipment?", example: "pass" },
+      ],
+      passCondition: "all-yes",
+    },
+  },
+  {
+    id: 5,
+    title:
+      "Does your child make unusual finger movements near his or her eyes?",
+    description:
+      "(FOR EXAMPLE, does your child wiggle his or her fingers close to his or her eyes?)",
+    yesDescription:
+      "Please describe these movements (If parent does not give a PASS example below, ask each individually.)",
+    noDescription: "",
+    yesSelected: {
+      questions: [
+        { title: "Wiggle his/her fingers near his/her eyes?", example: "pass" },
+        {
+          title: "Hold his/her hands up close to his/her eyes?",
+          example: "pass",
+        },
+        {
+          title: "Hold his/her hands off to the side of his/her eyes?",
+          example: "pass",
+        },
+        { title: "Flap his/her hands near his/her face?", example: "pass" },
+      ],
+      passCondition: "all-no",
+    },
+    noSelected: {
+      questions: [],
+      passCondition: "pass-direct",
+    },
+  },
+  {
+    id: 6,
+    title:
+      "Does your child point with one finger to ask for something or to get help?",
+    description: "pointing to a snack or toy that is out of reach",
+    yesDescription: "",
+    noDescription:
+      "If there is something your child wants that is out of reach, such as a snack or toy that is out of reach, how does he/she get it? (If parent does not give a PASS example below, ask each individually.)",
+    yesSelected: {
+      questions: [],
+      passCondition: "pass-direct",
+    },
+    noSelected: {
+      questions: [
+        {
+          title: "Reach for the object with his/her whole hand?",
+          example: "pass",
+        },
+        { title: "Lead you to the object?", example: "pass" },
+        { title: "Try to get the object for him/herself?", example: "pass" },
+        { title: "Ask for it using words or sounds?", example: "pass" },
+      ],
+      passCondition: "any-yes",
+    },
+  },
+  {
+    id: 7,
+    title:
+      "Does your child point with one finger to show you something interesting?",
+    description:
+      "pointing to an airplane in the sky or a big truck in the road",
+    yesDescription:
+      "Please give me an example something he/she might point at to show you. (If parent does not give a PASS example below, ask each individually.)",
+    noDescription:
+      "Does your child sometimes want you to see something interesting such as….",
+    yesSelected: {
+      questions: [
+        { title: "An airplane in the sky?", example: "pass" },
+        { title: "A truck on the road?", example: "pass" },
+        { title: "A bug on the ground?", example: "pass" },
+        { title: "An animal in the yard?", example: "pass" },
+      ],
+      passCondition: "any-yes",
+    },
+    noSelected: {
+      questions: [
+        {
+          title: "An airplane in the sky?",
+          example: "pass",
+        },
+        {
+          title: "A truck on the road?",
+          example: "pass",
+        },
+        {
+          title: "A bug on the ground?",
+          example: "pass",
+        },
+        {
+          title: "An animal in the yard?",
+          example: "pass",
+        },
+      ],
+      passCondition: "any-yes",
+    },
+  },
+  {
+    id: 8,
+    title: "Is your child interested in other children?",
+    description:
+      "does your child watch other children, smile at them, or go to them?)",
+    yesDescription: "",
+    noDescription: "",
+    yesSelected: {
+      questions: [
+        {
+          title:
+            "Is he/she interested in children who are not his/her brother or sister?",
+          example: "pass",
+        },
+      ],
+      passCondition: "all-yes",
+    },
+    noSelected: {
+      questions: [
+        {
+          title:
+            "When you are at the playground or supermarket, does your child usually respond to other children?",
+          example: "pass",
+        },
+      ],
+      passCondition: "all-yes",
+    },
+  },
+  {
+    id: 9,
+    title:
+      "Does your child show you things by bringing them to you or holding them up for you to see – not to get help, but just to share?",
+    description: "showing you a flower, a stuffed animal, or a toy truck)",
+    yesDescription:
+      "Please give me an example of something he/she might bring to show you or hold up for you to see. (If parent does not give one of the following PASS examples, ask each individually.)",
+    noDescription: "",
+    yesSelected: {
+      questions: [
+        { title: "A picture or toy just to show you?", example: "pass" },
+        { title: "A drawing he/she has done?", example: "pass" },
+        { title: "A flower he/she has picked?", example: "pass" },
+        { title: "A bug he/she has found in the grass?", example: "pass" },
+        { title: "A few blocks he/she has put together?", example: "pass" },
+        { title: "Other (describe):", example: "pass" },
+      ],
+      passCondition: "any-yes",
+    },
+    noSelected: {
+      questions: [
+        { title: "A picture or toy just to show you?", example: "pass" },
+        { title: "A drawing he/she has done?", example: "pass" },
+        { title: "A flower he/she has picked?", example: "pass" },
+        { title: "A bug he/she has found in the grass?", example: "pass" },
+        { title: "A few blocks he/she has put together?", example: "pass" },
+        { title: "Other (describe):", example: "pass" },
+      ],
+      passCondition: "any-yes",
+    },
+  },
+  {
+    id: 10,
+    title: "Does your child respond when you call his or her name?",
+    description:
+      "does he or she look up, talk or babble, or stop what he or she is doing when you call his or her name?)",
+    yesDescription:
+      "Please give me an example of how he/she responds when you call his/her name. (If parent does not give a PASS example below, ask each individually.)",
+    noDescription:
+      "If he/she is not involved in something fun or interesting, what does he/she do when you call his/her name? (If parent does not give a PASS example below, ask each individually.)",
+    yesSelected: {
+      questions: [
+        { title: "Look up?", example: "pass" },
+        { title: "Talk or babble?", example: "pass" },
+        { title: "Stop what he/she is doing?", example: "pass" },
+      ],
+      passCondition: "all-yes",
+    },
+    noSelected: {
+      questions: [
+        { title: "Make no response?", example: "pass" },
+        { title: "Seem to hear but ignores parent?", example: "pass" },
+        {
+          title:
+            "Respond only if parent is right in front of the child's face?",
+          example: "pass",
+        },
+        { title: "Respond only if touched?", example: "pass" },
+      ],
+      passCondition: "all-no",
+    },
+  },
   // {
   //   id: 11,
   //   title: "When you smile at your child, does he or she smile back at you?",

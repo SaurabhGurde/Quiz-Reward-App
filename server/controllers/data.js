@@ -25,13 +25,12 @@ export const getLeaderBoardData = async(req, res) => {
 
 
 export const handleDailyUserbonus = async (req, res) => {
-  console.log("first")
     try {
         const { id, rewardAmount } = req.body;
         if(!id){
           return res.status(500).json({ errorMsg: 'Server error', devMsg: "Id not present" });
         }
-        const updatedUser = await db.user.update({
+        let updatedUser = await db.user.update({
             where: { id },
             data: {
                 reward: {

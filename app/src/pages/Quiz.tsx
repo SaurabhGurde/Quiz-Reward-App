@@ -39,7 +39,6 @@ const Quiz = (props: QuizScreenProps) => {
       {id: userDetails.id, rewardAmount: 1000},
       dispatch,
     );
-    console.log("in else block", res)
     if (res.status === 200) {
      let userDetails = await getItem('userDetails');
       await setItem('userDetails', {
@@ -100,7 +99,6 @@ const Quiz = (props: QuizScreenProps) => {
           />
         </View>
       )}
-      {/* Wrap the question container in a ScrollView to handle multiple layers */}
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Animated.View
           style={[

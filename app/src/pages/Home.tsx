@@ -59,7 +59,6 @@ const HomeScreen = (props: propstype) => {
         {id: userDetails.id},
         dispatch,
       );
-      console.log(res)
       if (res.status === 200) {
        await handleDailyBonus();
         let userDetails = await getItem('userDetails');
